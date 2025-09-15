@@ -2,7 +2,7 @@ import React from 'react'
 
 const Sidebar = () => {
   return (
-    <div>Sidebar</div>
+    <div>Aqui vai ter o Menu lateral</div>
   )
 }
 
