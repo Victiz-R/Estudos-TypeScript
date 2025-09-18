@@ -1,34 +1,30 @@
-.sidebar {
-  width: 200px;
-  transition: width 0.3s;
-  background-color: #343a40;
-  min-height: 100vh;
-  padding: 1rem;
-}
-
-.sidebar.collapsed {
-  width: 60px;
-}
-
-.nav-link {
-  color: #fff;
-  padding: 0.5rem 1rem;
-}
-
-.nav-link.active {
-  background-color: #495057;
-  border-radius: 5px;
-}
-
-.nav-link:hover {
-  background-color: #495057;
-  border-radius: 5px;
-}
-
-.icon {
-  font-size: 1.2rem;
-}
-
-.toggle-btn {
-  width: 100%;
-}
+  .sidebar{
+    background-color: #343a40;
+    width: 200px;
+    min-height: 100vh;
+    padding: 1rem;
+    transition: width 0.3s ease;
+  }
+  .sidebar.collapsed{
+    width: 75px;
+  }
+  .sidebar.collapsed .nav-item{
+    visibility:hidden;
+  }
+  .nav-link{
+    color: #fff;
+    padding: 0.5rem 1rem ;
+    transition: background-color 0.3s ease;
+  }
+    .nav-link:hover{
+    background-color: #495057;
+    border-radius: 5px;
+    margin: 4px;
+    color: aqua;
+  }
+  .nav-item.active .nav-link{
+    background-color: #004b96;
+    color: #fff;
+    transition: background-color 0.7s ease;
+    border-radius: 5px;
+  }
