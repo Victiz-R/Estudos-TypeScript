@@ -1,18 +1,24 @@
-import { useState } from 'react'
+//import { useState } from 'react'
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Navbar from "./components/Navbar/navbar";
 
-function App() {
-  const [count, setCount] = useState(0)
-
+import Home from "./pages/home/home";
+import Redes from "./pages/redes/redes";
+import Contatos from "./pages/contatos/contatos";
+const App = () => {
   return (
-    <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+    <Router>
+      <Navbar />
+      <div className='container-fluid p-0 mt-1'>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/redes" element={<Redes/>} />
+          <Route path="/contatos" element={<Contatos/>} />
+        </Routes>
       </div>
-    </>
+    </Router>
   )
 }
 
