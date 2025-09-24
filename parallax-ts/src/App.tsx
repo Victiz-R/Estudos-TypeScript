@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Router>
       <Navbar />
-      <div className='container-fluid p-0 mt-1'>
+      <div className='container-fluid p-0'>
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/redes" element={<Redes/>} />
