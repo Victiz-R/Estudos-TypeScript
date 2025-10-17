@@ -7,6 +7,7 @@ import Irmao from './components/Irmao';
 import Idioma from './components/Idioma';
 import Count from './components/Count';
 import UserInfoForm from './components/UserInfoForm';
+import PaiFunction from './components/PaiFunction';
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
       <Idioma idiomairmao='inglês'/><br/>
       <Count /> <br />
       <UserInfoForm />
+      <PaiFunction />
       </div>
 </div>
 

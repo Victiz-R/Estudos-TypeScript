@@ -10,7 +10,8 @@ const UserInfoForm = () => {
 
         //integração com API para banco de dados
         //mas vamos ver só no log por enquanto
-        console.log("Nome:", name,"|", "Email:", email);
+        alert(`Olá: ${name}, esse é seu e-mail: ${email}`);
+        //console.log("Nome:", name,"|", "Email:", email);
     }
   return (
     <form onSubmit={handleSubmit} className="d=flex flex-column align-items-center gap-2 mt-3">
