@@ -1,6 +1,7 @@
+
 const Welcome = () => {
   return (
-    <div>Welcome</div>
+    <div className="text-white fs-2">Welcome</div>
   )
 }
 

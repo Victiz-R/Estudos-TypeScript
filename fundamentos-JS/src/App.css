@@ -3,6 +3,9 @@
   padding: 0;
   text-align: center;
 }
+.shadow-intence{
+  box-shadow: 3px 3px 9px black;
+}
 
 @keyframes logo-spin {
   from {
