@@ -8,13 +8,14 @@ import Idioma from './components/Idioma';
 import Count from './components/Count';
 import UserInfoForm from './components/UserInfoForm';
 import PaiFunction from './components/PaiFunction';
+import Form from './components/Form';
 
 function App() {
 
 
   return (
     <>
-     <div class="d-flex justify-content-center align-items-center vh100">
+     <div className="d-flex justify-content-center align-items-center vh100">
       <div className='p-5 bg-secondary bg-gradient rounded-3 shadow-intence text-center'>
       <Welcome /><br/>
       <Descricao />
@@ -23,6 +24,7 @@ function App() {
       <Count /> <br />
       <UserInfoForm />
       <PaiFunction />
+      <Form />
       </div>
 </div>
 
