@@ -9,6 +9,10 @@ import Count from './components/Count';
 import UserInfoForm from './components/UserInfoForm';
 import PaiFunction from './components/PaiFunction';
 import Form from './components/Form';
+import LoginButton from './components/LoginButton';
+import Greeting from './components/Exercicios/Greeting';
+import Counter from './components/Exercicios/Counter';
+import TaskList from './components/Exercicios/TaskList';
 
 function App() {
 
@@ -25,6 +29,11 @@ function App() {
       <UserInfoForm />
       <PaiFunction />
       <Form />
+      <LoginButton loggedIn={false}/>
+      <LoginButton loggedIn={true}/>
+      <Greeting name='Victor'/>
+      <Counter />
+      <TaskList tarefas={["bater o ponto", "verificar rota", "colocar na rota O.S novas"]}/>
       </div>
 </div>
 

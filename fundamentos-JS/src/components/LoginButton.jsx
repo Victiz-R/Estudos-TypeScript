@@ -1,8 +1,8 @@
-import React from 'react'
-
-const LoginButton = () => {
+const LoginButton = ({loggedIn}) => {
+  // Entrar -> Deslogado
+  // Sair -> Logado
   return (
-    <div>LoginButton</div>
+    <div>{loggedIn ? <button className="btn">Logout</button> : <button className="btn btn-outline-dark">Login</button> }</div>
   )
 }
 

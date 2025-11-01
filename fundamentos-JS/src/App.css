@@ -7,6 +7,14 @@
   box-shadow: 3px 3px 9px black;
 }
 
+.list-group-item:hover{
+  background-color: #2873be;
+  cursor: pointer;
+  transform: scale(105%);
+  transition: 0.3s;
+  color: white;
+  
+}
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
