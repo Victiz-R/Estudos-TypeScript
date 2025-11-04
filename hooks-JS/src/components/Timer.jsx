@@ -4,14 +4,14 @@ const Timer = () => {
     const [segundos, setSegundos] = useState (0);
 
     // setInterval, setTimeout
-    useEffect (() =>{
+   /* useEffect (() =>{
         const intervalId = setInterval(() =>{
             setSegundos((prevSegundos) => prevSegundos +1);
         }, 1000);
 
         // limpaza do estado
         return() => clearInterval(intervalId);
-    }, []); // array dependencias vazio
+    }, []); // array dependencias vazio */
   return (
     <div>
       <p>Timer: {segundos} segundos</p>
